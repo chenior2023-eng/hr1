@@ -1,0 +1,51 @@
+:root {
+  --pink: #ff4fa3;
+  --yellow: #ffd84d;
+  --blue: #3f8cff;
+  --bg: #0f1224;
+  --card: rgba(255, 255, 255, 0.12);
+  --text: #f7f9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--pink), var(--yellow), var(--blue));
+  color: var(--text);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: min(92vw, 700px);
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #101327;
+  background: linear-gradient(90deg, var(--yellow), #fff39a);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
